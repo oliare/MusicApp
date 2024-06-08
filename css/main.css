@@ -27,6 +27,7 @@
 body {
     background-color: var(--body-color);
     transition: var(--tran-05);
+    margin: 20px;
 }
 
 ::selection {
@@ -41,58 +42,4 @@ body.dark {
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
-}
-/* SEARCH BOX */
-#search-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color-light);
-    border-radius: 20px;
-    margin: 20px 20%;
-    padding: 0 20px;
-    width: 500px;
-}
-
-#search-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-/* PROFILE */
-.profile{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 18px;
-    margin-bottom: 40px;
-}
-
-.profile .user{
-    display: flex;
-}
-
-.profile .user .left{
-    display: flex;
-    align-items: center;
-    /* background: #32323d; */
-    padding: 6px;
-    border-radius: 6px 0 0 6px;
-}
-
-.profile .user .left img{
-    width: 30px;
-    height: 30px;
-}
-
-.profile .user .right{
-    /* background-color: #25252d; */
-    border-radius: 0 6px 6px 0;
-    padding: 13px;
-    color: #fff;
 }
