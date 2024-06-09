@@ -11,7 +11,7 @@
 } */
 
 body {
-    background: linear-gradient(#d58cddcd, rgba(92, 24, 81, 0.87));
+    background: linear-gradient(#ea84d2cd, rgba(148, 38, 132, 0.87));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ body {
     width: 500px;
     height: 500px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
 

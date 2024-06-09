@@ -1,3 +1,10 @@
+const loadDOM = (page) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", `../pages/${page}`, false)
+    xhr.send();
+    document.write(xhr.response)
+}
+
 // validation
 (() => {
     'use strict'

@@ -1,9 +1,4 @@
-let xhr = new XMLHttpRequest();
-xhr.open("GET", "../pages/sidebar.html", false)
-xhr.send();
-document.write(xhr.response)
-
-;const body = document.querySelector('body'),
+const body = document.querySelector('body'),
     sidebar = body.querySelector('nav'),
     toggle = body.querySelector(".toggle"),
     searchBtn = body.querySelector(".search-box"),
@@ -21,7 +16,16 @@ modeSwitch.addEventListener("click", () => {
         logo.src = '../images/w_logo.png';
     } else {
         modeText.innerText = "Dark mode";
-        logo.src = '../images/b_logo.png';        
+        logo.src = '../images/b_logo.png';
     }
 });
 
+const resize = document.querySelector('.toggle');
+resize.addEventListener('click', () => {
+    const musicPlayer = document.querySelector('.music-player');
+    if (musicPlayer.classList.contains('collapsed'))
+        musicPlayer.classList.remove('collapsed');
+    else
+        musicPlayer.classList.add('collapsed');
+
+});
