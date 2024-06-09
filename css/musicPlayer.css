@@ -3,7 +3,7 @@
     margin: inherit;
     padding: 20px;
     background-color: var(--sidebar-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     font-family: Arial, sans-serif;
     position: fixed;

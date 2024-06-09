@@ -1,43 +1,25 @@
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
     color: var(--text-color);
 }
 
-.profile {
+.search-container {
+    flex-grow: 1;
     display: flex;
-    align-items: center;
-    /* margin-right: 2rem; */
-    gap: 25px;
-    font-size: large;
+    justify-content: center;
 }
 
-.profile .user-profile .user-icon {
-    margin: 6px -15px 0 30px;
-    align-items: center;
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.profile .user-name {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* SEARCH BOX */
 #search-box {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color-light);
     border-radius: 20px;
-    margin: 0 20%;
     padding: 0 20px;
     width: 500px;
+    margin-left: 190px;
 }
 
 #search-box input {
@@ -51,6 +33,32 @@
     color: var(--text-color);
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: large;
+}
+
+.profile .user-profile .user-icon {
+    margin: 0 -15px 0 30px;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile .user-name {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
 body.dark #search-box .search-icon {
     color: var(--text-color);
+}
+
+.profile div i{
+    cursor: pointer;
 }
