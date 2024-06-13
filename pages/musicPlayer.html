@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <script src="../js/musicPlayer.js"></script>
+
     <div class="music-player collapsed">
         <div class="collapse">
             <i class="bi bi-arrows-angle-contract"></i>
@@ -19,12 +21,12 @@
 
             <div class="song-infos">
                 <div class="image-container">
-                    <img src="https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/216_636967437355378335Your_Lie_Small_hq.jpg"
+                    <img src="{{song.thumbnails}}"
                         alt="baner">
                 </div>
                 <div class="song-description">
-                    <p class="title">Watashitachi wa Sou Yatte Ikite Iku Jinshu na no</p>
-                    <p class="artist">Masaru Yokoyama</p>
+                    <p class="title">{{ song.title }}</p>
+                    <p class="artist">{{ song.artist }}</p>
                     <i class="bi bi-heart like"></i>
                 </div>
             </div>
@@ -39,11 +41,11 @@
                 </div>
 
                 <div class="progress-container">
-                    <span>0:00</span>
+                    <p id="current-time">{{song_top.duration}}</p>
                     <div class="progress-bar">
                         <div class="pro gress"></div>
                     </div>
-                    <span>0:00</span>
+                    <p id="current-time">{{song_top.duration}}</p>
                 </div>
             </div>
 
@@ -59,6 +61,9 @@
         </div>
 
     </div>
+    <!-- <script src="../js/musicPlayer.js"></script> -->
+    <script src="../js/play_music.js"></script>
+
 </body>
 
 </html>

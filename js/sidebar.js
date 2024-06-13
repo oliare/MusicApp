@@ -20,12 +20,4 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
-const resize = document.querySelector('.toggle');
-resize.addEventListener('click', () => {
-    const musicPlayer = document.querySelector('.music-player');
-    if (musicPlayer.classList.contains('collapsed'))
-        musicPlayer.classList.remove('collapsed');
-    else
-        musicPlayer.classList.add('collapsed');
 
-});

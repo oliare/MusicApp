@@ -116,20 +116,6 @@ h2 {
     border: 2px solid rgba(255, 255, 255, .2);
 }
 
-.forgot-pass {
-    margin: -20px 0 30px;
-}
-
-.forgot-pass a {
-    color: #fff;
-    font-size: .8em;
-    text-decoration: none;
-}
-
-.forgot-pass a:hover {
-    text-decoration: underline;
-}
-
 .btn {
     position: relative;
     width: 100%;
@@ -144,6 +130,7 @@ h2 {
     border: none;
     outline: none;
     transition: .5s;
+    margin-top: 50px;
 }
 
 .btn:hover {
