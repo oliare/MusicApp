@@ -27,24 +27,29 @@
                     <input type="text" id="fullName" name="fullName" placeholder="Full Name" class="form-control"
                         required>
                     <i class="bx bxs-user"></i>
+                    <div class="invalid-feedback">Full Name is required.</div>
                 </div>
                 <div class="input-field">
                     <input type="text" id="username" name="username" placeholder="Username" class="form-control"
                         required>
                     <i class="bx bxs-user"></i>
+                    <div id="invalidUsername" class="invalid-feedback">Please provide a valid username.</div>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
                     <input type="email" id="email" name="email" placeholder="Email" class="form-control"
-                        class="form-control" required>
+                        class="form-control" pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$" required>
                     <i class="bx bxs-envelope"></i>
+                    <div class="invalid-feedback">Please provide a valid email address.</div>
                 </div>
                 <div class="input-field">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone number" class="form-control"
-                        class="form-control" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+XX(XXX) XXX-XX-XX"
+                        pattern="^\+\d{2}\(\d{3}\) \d{3}-\d{2}-\d{2}$" class="form-control" class="form-control"
+                        required>
                     <i class="bx bxs-phone"></i>
+                    <div class="invalid-feedback">Please provide a valid phone number.</div>
                 </div>
             </div>
 
@@ -58,17 +63,19 @@
                     <input type="password" id="confirmPass" name="confirmPass" placeholder="Confirm password"
                         class="form-control" required>
                     <i class="bx bxs-lock-alt"></i>
+                    <div id="notMatch" class="invalid-feedback">Confirm the password.</div>
                 </div>
             </div>
             <label>
-                <input type="checkbox" id="terms" class="form-check-input" required>I agree with terms and
-                conditions
+                <input type="checkbox" id="terms" class="form-check-input" required>I agree with terms and conditions
             </label>
 
             <button type="submit" class="btn">Register</button>
         </form>
     </div>
 
+    <script src="../js/imask.js"></script>
+    <script src="../js/signup.js"></script>
     <script src="../js/framework.js"></script>
 </body>
 

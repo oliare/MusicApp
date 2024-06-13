@@ -80,6 +80,25 @@ body {
     color: #fff;
     border-radius: 6px;
     padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 90%;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input-box .input-field .invalid-feedback{
+    position: absolute;
+    bottom: -10px; 
+    font-size: 12px;
+}
+
+.input-box .input-field input.invalid {
+    border-color: rgba(253, 47, 47, 0.403);
 }
 
 .input-box .input-field input:focus {
@@ -108,14 +127,6 @@ body {
 
 .input-box .input-field input:focus::placeholder {
     color: transparent;
-}
-
-.input-box .input-field i {
-    position: absolute;
-    left: 90%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
 }
 
 .wrapper label {
@@ -149,7 +160,6 @@ body {
     height: 45px;
     background: #ffffff2b;
     border: none;
-    /* outline: none; */
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;

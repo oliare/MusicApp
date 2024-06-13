@@ -15,8 +15,7 @@ $sql = "INSERT INTO users (FullName, Username, Email, Phone, Password)
  VALUES ('$fullName', '$username', '$email', '$phone', '$password')";
 
 if (mysqli_query($bd_musicApp, $sql)) {
-    echo "New user added successfully";
-    header("Location: ../pages/index.html");
+    header("Location: ../pages/user.html");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($bd_musicApp);
 }
