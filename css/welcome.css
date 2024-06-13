@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    cursor:default;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(173, 173, 173, 0.796);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/b_logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.navbar button {
+    display: flex;
+    text-decoration: none;
+    margin: 0 20px;
+    width: 100px;
+    justify-content: center;
+    padding: 10px 20px;
+    transition: color 0.6s, border 0.6s;
+    z-index: 1;    
+    background-color: #ffffff1b;
+}
+
+.navbar button a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin: 100px 0 50px 0;
+}
+
+.content p {
+    margin-bottom: 80px;
+    font-weight: 100;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    /* border: 2px solid #009688; */
+    /* background: transparent; */
+    /* border: 2px solid #55bcecc7; */
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    /* background: #009688; */
+    background: #96cff776;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.content button {
+    letter-spacing: 1.5px;
+    background-color: #ffffff3b;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    /* border: 2px solid #009687b5; */
+    transition: color 0.6s, border 0.6s;
+    /* border: 2px solid #ffffff90; */
+    /* border: 2px solid #55bcec93; */
+}
